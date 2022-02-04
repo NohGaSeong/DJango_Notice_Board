@@ -1,5 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+from attr import field, fields
+>>>>>>> c69a391b19be050031c8f66627f4b012eb688760
 =======
 from attr import field, fields
 >>>>>>> c69a391b19be050031c8f66627f4b012eb688760
@@ -13,6 +17,7 @@ class QuestionForm(forms.ModelForm):
     class Meta:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         model = Question
         fields = ['subject', 'content']
         labels = {
@@ -22,6 +27,8 @@ class QuestionForm(forms.ModelForm):
 =======
 =======
 >>>>>>> c69a391b19be050031c8f66627f4b012eb688760
+=======
+>>>>>>> c69a391b19be050031c8f66627f4b012eb688760
         model = Question  # 사용할 모델
         fields = ['subject', 'content']  # QuestionForm에서 사용할 Question 모델의 속성
         labels = {
@@ -29,6 +36,9 @@ class QuestionForm(forms.ModelForm):
             'content' : '내용',
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c69a391b19be050031c8f66627f4b012eb688760
+=======
 >>>>>>> c69a391b19be050031c8f66627f4b012eb688760
 =======
 >>>>>>> c69a391b19be050031c8f66627f4b012eb688760
@@ -40,7 +50,11 @@ class AnswerForm(forms.ModelForm):
         labels = {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'content': '답변내용',
+=======
+            'content' : '답변내용',
+>>>>>>> c69a391b19be050031c8f66627f4b012eb688760
 =======
             'content' : '답변내용',
 >>>>>>> c69a391b19be050031c8f66627f4b012eb688760
