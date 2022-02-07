@@ -2,20 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Question
 from .forms import QuestionForm, AnswerForm
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 from django.core.paginator import Paginator
-=======
-=======
-=======
-
->>>>>>> c69a391b19be050031c8f66627f4b012eb688760
-
->>>>>>> c69a391b19be050031c8f66627f4b012eb688760
-
-
->>>>>>> c69a391b19be050031c8f66627f4b012eb688760
 
 def index(request):
     """
