@@ -1,5 +1,3 @@
-# 이러한 방법은 혼자 하는 프로젝트가 아니라면 절대 추천하지 않는다.
-
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
@@ -7,6 +5,7 @@ from django.utils import timezone
 
 from ..forms import AnswerForm
 from ..models import Question, Answer
+
 
 @login_required(login_url='common:login')
 def answer_create(request, question_id):
@@ -27,6 +26,7 @@ def answer_create(request, question_id):
         form = AnswerForm()
     context = {'question': question, 'form': form}
     return render(request, 'pybo/question_detail.html', context)
+
 
 @login_required(login_url='common:login')
 def answer_modify(request, answer_id):
